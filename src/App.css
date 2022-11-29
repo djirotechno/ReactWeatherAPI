@@ -14,9 +14,9 @@
 }
 
 .formInput{
-
 margin-top: 10px;
 text-align: center;
+border-radius: 25px;
 
   
 }
@@ -34,9 +34,9 @@ flex-wrap: wrap;
 }
 .infolocal{
   flex:4;
- 
   flex-direction: column;
- padding-left: 40px;
+  padding-left: 40px;
+  font-size: 38px;
  
 }
 
@@ -59,7 +59,6 @@ flex-wrap: wrap;
 }
 .meteoItems{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   background-color: white;
   width:150px;
@@ -69,7 +68,7 @@ flex-wrap: wrap;
   text-align: center;
 }
 
-img{
+.meteoItems img{
 align-self: center;
 width: 36px;
 height: 31px;
@@ -82,4 +81,12 @@ margin-bottom: 5px;
   display: inline-block;
   height: 150px;
   margin: 0 20px;
+}
+
+.image{
+align-self: center;
+width: 120px;
+height: 120px;
+border-radius: 228.5px;
+margin-bottom: 5px;
 }
