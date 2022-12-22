@@ -40,11 +40,11 @@ function App() {
                 <div  className='sun'>
                   <div className='sunset'>
                     {data.main ? <p>{ moment.utc(data.sys.sunrise,'X').add(data.timezone,'seconds').format('HH:mm a')}</p> : null}
-                    <img src="/img/sunrise.png"  alt='sunrise'/>
+                    <img src="/img/sunrise.png"  />
                   </div>
                   <div className='sunrise'>
                     {data.main ? <p>{ moment.utc(data.sys.sunset,'X').add(data.timezone,'seconds').format('HH:mm a')}</p> : null}
-                    <img src="/img/sunset.png"  alt='sunset'/>
+                    <img src="/img/sunset.png"  />
                   </div>
                 </div>
             </div>
