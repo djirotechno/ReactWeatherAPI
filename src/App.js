@@ -40,34 +40,34 @@ function App() {
                 <div  className='sun'>
                   <div className='sunset'>
                     {data.main ? <p>{ moment.utc(data.sys.sunrise,'X').add(data.timezone,'seconds').format('HH:mm a')}</p> : null}
-                    <img src="/img/sunrise.png"  />
+                    <img src="/img/sunrise.png"  alt='lever'/>
                   </div>
                   <div className='sunrise'>
                     {data.main ? <p>{ moment.utc(data.sys.sunset,'X').add(data.timezone,'seconds').format('HH:mm a')}</p> : null}
-                    <img src="/img/sunset.png"  />
+                    <img src="/img/sunset.png"  alt='coucher'/>
                   </div>
                 </div>
             </div>
             <div className='meteo'>
               <div className='meteoItems'>
                 <p>Temp</p>
-                <img src='/img/celsius.png'/>
+                <img src='/img/celsius.png' alt='coucher'/>
                 {data.main ? <p>{(data.main.temp - 273.15).toFixed()}°C</p> : null}
               
               </div>
                 <div className='meteoItems'>
                   <p>Pression</p>
-                  <img src='/img/atmospherique.png'/>
+                  <img src='/img/atmospherique.png' alt='coucher'/>
                   {data.main ? <p>{data.main.pressure}PA</p> : null}
                 </div>
                 <div className='meteoItems'>
                   <p>Humidite</p>
-                  <img src='/img/humidity.png'/>
+                  <img src='/img/humidity.png' alt='coucher'/>
                   {data.main ? <p>{data.main.humidity}%</p> : null}
                 </div>
                 <div className='meteoItems'>
                   <p>Vent</p>
-                  <img src='/img/vent.png'/>
+                  <img src='/img/vent.png' alt='coucher'/>
                   {data.main ? <p>{data.wind.speed}MPF</p> : null}
                 </div>  
             </div>
