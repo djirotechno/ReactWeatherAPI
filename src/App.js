@@ -12,7 +12,8 @@ function App() {
         if(event.key === 'Enter'){
           axios.get(url).then((response)=>{
             setData(response.data)
-          let date = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(response.data.dt)
+          // let date = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(response.data.dt)
+          // console.log(date);
           }) 
         }
       })
